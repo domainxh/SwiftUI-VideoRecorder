@@ -39,15 +39,20 @@ extension ImagePicker {
         }
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+
+            picker.dismiss(animated: true, completion: nil)
             
             guard
               let mediaType = info[UIImagePickerController.InfoKey.mediaType] as? String,
               mediaType == (kUTTypeMovie as String),
-              let url = info[UIImagePickerController.InfoKey.mediaURL] as? URL
-            else { return }
-            
+              let url = info[UIImagePickerController.InfoKey.mediaURL] as? URL,
+              UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.path)
+              else { return }
+
             parent.url = url
-            picker.dismiss(animated: true, completion: nil)
+
+            // Handle a movie capture
+            UISaveVideoAtPathToSavedPhotosAlbum(url.path, self, nil, nil)
         }
     }
 }
