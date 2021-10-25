@@ -10,11 +10,8 @@
 		7090DADA2722FFFF00B5D6E1 /* VideoRecordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090DAD92722FFFF00B5D6E1 /* VideoRecordApp.swift */; };
 		7090DADE2723000200B5D6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7090DADD2723000200B5D6E1 /* Assets.xcassets */; };
 		7090DAE12723000200B5D6E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7090DAE02723000200B5D6E1 /* Preview Assets.xcassets */; };
-		7090DAEA27230A4600B5D6E1 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090DAE927230A4600B5D6E1 /* CameraViewController.swift */; };
-		7090DAEC27230A6B00B5D6E1 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090DAEB27230A6B00B5D6E1 /* CameraController.swift */; };
 		7090DAF027233EE500B5D6E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090DAEF27233EE500B5D6E1 /* HomeView.swift */; };
 		7090DAF22723402600B5D6E1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090DAF12723402600B5D6E1 /* HomeViewModel.swift */; };
-		7090DAF4272341B100B5D6E1 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090DAF3272341B100B5D6E1 /* VideoHelper.swift */; };
 		7090DAF6272344E200B5D6E1 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090DAF5272344E200B5D6E1 /* VideoView.swift */; };
 		7090DAF82723457600B5D6E1 /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090DAF72723457600B5D6E1 /* VideoPlayerViewModel.swift */; };
 		7090DAFC2723470A00B5D6E1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7090DAFB2723470A00B5D6E1 /* ImagePicker.swift */; };
@@ -25,11 +22,8 @@
 		7090DAD92722FFFF00B5D6E1 /* VideoRecordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordApp.swift; sourceTree = "<group>"; };
 		7090DADD2723000200B5D6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7090DAE02723000200B5D6E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7090DAE927230A4600B5D6E1 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		7090DAEB27230A6B00B5D6E1 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		7090DAEF27233EE500B5D6E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7090DAF12723402600B5D6E1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		7090DAF3272341B100B5D6E1 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
 		7090DAF5272344E200B5D6E1 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		7090DAF72723457600B5D6E1 /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModel.swift; sourceTree = "<group>"; };
 		7090DAFB2723470A00B5D6E1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -65,7 +59,6 @@
 		7090DAD82722FFFF00B5D6E1 /* VideoRecord */ = {
 			isa = PBXGroup;
 			children = (
-				7090DAFF2723490700B5D6E1 /* Utility */,
 				7090DAFA272346F800B5D6E1 /* Representables */,
 				7090DAFD2723489900B5D6E1 /* Home */,
 				7090DAFE272348E900B5D6E1 /* VideoPlayer */,
@@ -109,16 +102,6 @@
 				7090DAF72723457600B5D6E1 /* VideoPlayerViewModel.swift */,
 			);
 			path = VideoPlayer;
-			sourceTree = "<group>";
-		};
-		7090DAFF2723490700B5D6E1 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				7090DAEB27230A6B00B5D6E1 /* CameraController.swift */,
-				7090DAE927230A4600B5D6E1 /* CameraViewController.swift */,
-				7090DAF3272341B100B5D6E1 /* VideoHelper.swift */,
-			);
-			path = Utility;
 			sourceTree = "<group>";
 		};
 		7090DB00272354D300B5D6E1 /* Record */ = {
@@ -201,11 +184,8 @@
 				7090DAF82723457600B5D6E1 /* VideoPlayerViewModel.swift in Sources */,
 				7090DAF6272344E200B5D6E1 /* VideoView.swift in Sources */,
 				7090DAF027233EE500B5D6E1 /* HomeView.swift in Sources */,
-				7090DAEA27230A4600B5D6E1 /* CameraViewController.swift in Sources */,
-				7090DAF4272341B100B5D6E1 /* VideoHelper.swift in Sources */,
 				7090DADA2722FFFF00B5D6E1 /* VideoRecordApp.swift in Sources */,
 				7090DAFC2723470A00B5D6E1 /* ImagePicker.swift in Sources */,
-				7090DAEC27230A6B00B5D6E1 /* CameraController.swift in Sources */,
 				7090DAF22723402600B5D6E1 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
